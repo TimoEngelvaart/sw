@@ -6,3 +6,7 @@ let vapIdKeys = push.generateVAPIDKeys = {
 }
 
 push.setVapidDetails('mailto:test@code.co.uk', vapIdKeys.publicKey, vapIdKeys.privateKey)
+
+let sub={};
+
+push.sendNotification(sub, 'test message');
